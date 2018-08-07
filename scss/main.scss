@@ -2,6 +2,15 @@
         GENERAL VARIABLES
 ----------------------------------------------------------------------------------------------*/
 
+//Colors
+$primary: #0099d8;
+$secondary: #404040;
+
+$primary-hover: #017db3;
+
+$gray-dark: #1F1F1F;
+$gray-ligth: #999999;
+
 /*---------------------------------------------------------------------------------------------
         IMPORT FONTS: Open Sans
 ----------------------------------------------------------------------------------------------*/
@@ -167,3 +176,48 @@
     font-weight: normal;
     font-style: normal;
 }
+
+/*---------------------------------------------------------------------------------------------
+        MAIN MENU
+----------------------------------------------------------------------------------------------*/
+.header {
+    background: white;
+    font-family: 'open_sanssemibold';
+    .main-menu{
+        .nav-link {
+            color: $primary;
+            font-size: 0.875rem;
+            &:hover{
+                color: $secondary;
+            }
+        }
+        .active>.nav-link{
+            color: $secondary;
+        }
+    }
+}
+
+/*---------------------------------------------------------------------------------------------
+        SLIDER
+----------------------------------------------------------------------------------------------*/ 
+.slider{
+    .carousel-caption {
+             
+        .title-slider{
+            font-size: 1.5625rem;
+        }
+        .btn-slider{
+            font-size: 1rem;
+            background-color: $primary;
+            padding: .375rem 2rem;
+            border: 0;
+            border-radius: 1.25rem;
+
+            &:hover{
+                background-color: $primary-hover;
+                border-color: $primary-hover;
+            }
+        }
+    }
+}
+  

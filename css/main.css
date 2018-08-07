@@ -107,5 +107,33 @@
   src: url("../montserrat-ultralight-webfont.woff2") format("woff2"), url("../montserrat-ultralight-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+/*---------------------------------------------------------------------------------------------
+        MAIN MENU
+----------------------------------------------------------------------------------------------*/
+.header {
+  background: white;
+  font-family: 'open_sanssemibold'; }
+  .header .main-menu .nav-link {
+    color: #0099d8;
+    font-size: 0.875rem; }
+    .header .main-menu .nav-link:hover {
+      color: #404040; }
+  .header .main-menu .active > .nav-link {
+    color: #404040; }
+
+/*---------------------------------------------------------------------------------------------
+        SLIDER
+----------------------------------------------------------------------------------------------*/
+.slider .carousel-caption .title-slider {
+  font-size: 1.5625rem; }
+.slider .carousel-caption .btn-slider {
+  font-size: 1rem;
+  background-color: #0099d8;
+  padding: .375rem 2rem;
+  border: 0;
+  border-radius: 1.25rem; }
+  .slider .carousel-caption .btn-slider:hover {
+    background-color: #017db3;
+    border-color: #017db3; }
 
 /*# sourceMappingURL=main.css.map */
