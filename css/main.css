@@ -1,6 +1,39 @@
 /*---------------------------------------------------------------------------------------------
         GENERAL VARIABLES
 ----------------------------------------------------------------------------------------------*/
+.bg-primary-ifk {
+  background-color: #0099d8; }
+
+.bg-primary-dark-ifk {
+  background-color: #017db3; }
+
+.bg-secondary-ifk {
+  background-color: #404040; }
+
+.bg-green {
+  background-color: #54BE54; }
+
+.bg-green-light {
+  background-color: #9db167; }
+
+.bg-green-dark {
+  background-color: #227c55; }
+
+.bg-cian {
+  background-color: #3498db; }
+
+.bg-brown {
+  background-color: #72604b; }
+
+.bg-brown-light {
+  background-color: #927f6d; }
+
+.bg-orange {
+  background-color: #e4aa39; }
+
+.bg-purple {
+  background-color: #6964a0; }
+
 /*---------------------------------------------------------------------------------------------
         IMPORT FONTS: Open Sans
 ----------------------------------------------------------------------------------------------*/
@@ -94,21 +127,21 @@
   font-style: normal; }
 @font-face {
   font-family: 'montserratregular';
-  src: url("../montserrat-regular-webfont.woff2") format("woff2"), url("../montserrat-regular-webfont.woff") format("woff");
+  src: url("../fonts/montserrat-regular-webfont.woff2") format("woff2"), url("../fonts/montserrat-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'montserratsemi_bold';
-  src: url("../montserrat-semibold-webfont.woff2") format("woff2"), url("../montserrat-semibold-webfont.woff") format("woff");
+  src: url("../fonts/montserrat-semibold-webfont.woff2") format("woff2"), url("../fonts/montserrat-semibold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'montserratultra_light';
-  src: url("../montserrat-ultralight-webfont.woff2") format("woff2"), url("../montserrat-ultralight-webfont.woff") format("woff");
+  src: url("../fonts/montserrat-ultralight-webfont.woff2") format("woff2"), url("../fonts/montserrat-ultralight-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 /*---------------------------------------------------------------------------------------------
-        MAIN MENU
+        INDEX: MAIN MENU
 ----------------------------------------------------------------------------------------------*/
 .header {
   background: white;
@@ -122,18 +155,72 @@
     color: #404040; }
 
 /*---------------------------------------------------------------------------------------------
-        SLIDER
+        INDEX: SLIDER
 ----------------------------------------------------------------------------------------------*/
-.slider .carousel-caption .title-slider {
-  font-size: 1.5625rem; }
-.slider .carousel-caption .btn-slider {
-  font-size: 1rem;
-  background-color: #0099d8;
-  padding: .375rem 2rem;
-  border: 0;
-  border-radius: 1.25rem; }
-  .slider .carousel-caption .btn-slider:hover {
-    background-color: #017db3;
-    border-color: #017db3; }
+.slider .carousel-caption {
+  bottom: 5rem; }
+  .slider .carousel-caption .title-slider {
+    font-size: 1.875rem;
+    max-width: 25rem;
+    font-family: "montserratsemi_bold"; }
+  .slider .carousel-caption .btn-slider {
+    font-size: 0.875rem;
+    background-color: #0099d8;
+    padding: 0.625rem 2rem;
+    border: 0;
+    border-radius: 1.25rem;
+    font-family: "open_sansbold"; }
+    .slider .carousel-caption .btn-slider:hover {
+      background-color: #017db3;
+      border-color: #017db3; }
+
+/*---------------------------------------------------------------------------------------------
+        INDEX: CATEGORIES
+----------------------------------------------------------------------------------------------*/
+.categories {
+  padding: 5rem 0 5rem 0; }
+  .categories .title-section {
+    background: url("../images/ifk_line_separator.png") center bottom no-repeat;
+    font-family: "montserratregular";
+    font-size: 1.625rem;
+    color: #404040; }
+  .categories .description-section {
+    font-family: "open_sansregular";
+    font-size: 0.875rem;
+    color: #404040; }
+  .categories a {
+    text-decoration: none; }
+  .categories .item {
+    font-family: "montserratlight";
+    margin-bottom: 1.5rem; }
+    .categories .item .item-icon {
+      width: 6rem; }
+    .categories .item .item-title {
+      font-size: 1.25rem; }
+    .categories .item .item-description {
+      font-size: 0.625rem; }
+    .categories .item:hover {
+      -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+              box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
+
+/*---------------------------------------------------------------------------------------------
+        INDEX: CUSTOMERS
+----------------------------------------------------------------------------------------------*/
+.customers .title-customers {
+  font-family: "montserratregular"; }
+.customers .description-customers {
+  font-family: "open_sansregular"; }
+.customers .btn-customers {
+  font-size: 0.875rem;
+  background-color: none;
+  padding: 0.625rem 2rem;
+  border: 1px solid #fff;
+  border-radius: 1.25rem;
+  font-family: "open_sansbold";
+  color: #fff;
+  text-decoration: none; }
+  .customers .btn-customers:hover {
+    background-color: #fff;
+    color: #0099d8; }
 
 /*# sourceMappingURL=main.css.map */

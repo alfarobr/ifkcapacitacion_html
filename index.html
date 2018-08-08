@@ -52,21 +52,33 @@
     <!-- Slider -->
     <section class="slider">
         <div id="carousel-home" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-home" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-home" data-slide-to="1"></li>
+                <li data-target="#carousel-home" data-slide-to="2"></li>
+            </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="item" style="background: url('images/ifk_img_slider.jpg') center top no-repeat; height: 470px"></div>
-                    <div class="carousel-caption text-uppercase">
-                        <h2 class="title-slider">Somos el soporte estratégico para tu formación profesional</h2>
+                    <div class="carousel-caption text-uppercase text-left">
+                        <h2 class="title-slider mb-2">Somos el soporte estratégico para tu formación profesional</h2>
                         <a src="#" class="btn btn-slider">Descargar calendario</a>
                     </div>
                 </div>
                 <div class="carousel-item">
-                        <div class="item" style="background: url('images/ifk_img_slider.jpg') center top no-repeat; height: 470px;"></div>
-                        <div class="carousel-caption text-uppercase">
-                            <h2 class="title-slider">Somos el soporte estratégico para tu formación profesional</h2>
-                            <a src="#" class="btn btn-slider">Descargar calendario</a>
-                        </div>
+                    <div class="item" style="background: url('images/ifk_img_slider.jpg') center top no-repeat; height: 470px;"></div>
+                    <div class="carousel-caption text-uppercase text-left">
+                        <h2 class="title-slider mb-2">Somos el soporte estratégico para tu formación profesional</h2>
+                        <a src="#" class="btn btn-slider">Descargar calendario</a>
                     </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="item" style="background: url('images/ifk_img_slider.jpg') center top no-repeat; height: 470px;"></div>
+                    <div class="carousel-caption text-uppercase text-left">
+                        <h2 class="title-slider mb-2">Somos el soporte estratégico para tu formación profesional</h2>
+                        <a src="#" class="btn btn-slider">Descargar calendario</a>
+                    </div>
+                </div>
             </div>
             <a class="carousel-control-prev" href="#carousel-home" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -81,9 +93,115 @@
 
     <!-- Main -->
     <main class="main">
-    </main> <!-- Main -->
+        <!-- Categories -->
+        <section class="categories">
+            <div class="container">
+                <div class="header-section mb-5 text-center">
+                    <h1 class="title-section text-uppercase pb-3">Categorías de Nuestros Cursos</h1>
+                    <p class="description-section">Nuestros cursos tienen el respaldo del más grande sistema de acreditación para hacer de nuestros estudiantes, los mejores.</p>
+                </div>
 
-    <footer>
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                        <a href="#">
+                        <div class="item bg-green p-4 text-uppercase text-white d-flex flex-column align-items-center">
+                            <img class="item-icon mb-3 justify-content-center" src="images/ifk_icon_onocuidad_alimentaria.png" title="" alt="">
+                            <h1 class="item-title text-center justify-content-center">Inocuidad Alimentaria</h1>
+                            <p class="item-description text-center m-0 justify-content-center">Normas BRC, IFS, FSSC</p>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="item bg-cian p-4 text-uppercase text-white d-flex flex-column align-items-center">
+                            <img class="item-icon mb-3 justify-content-center" src="images/ifk_icon_onocuidad_emvases.png" title="" alt="">
+                            <h1 class="item-title text-center justify-content-center">Inocuidad de envases y materiales de embalaje</h1>
+                            <p class="item-description text-center m-0 justify-content-center">Normas BRC, IFS, FSSC</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="item bg-brown p-4 text-uppercase text-white d-flex flex-column align-items-center">
+                            <img class="item-icon mb-3 justify-content-center" src="images/ifk_icon_haccp_ppr.png" title="" alt="">
+                            <h1 class="item-title text-center justify-content-center">HACCP y PPR</h1>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="item bg-brown-light p-4 text-uppercase text-white d-flex flex-column align-items-center">
+                            <img class="item-icon mb-3 justify-content-center" src="images/ifk_icon_haccp_ppr.png" title="" alt="">
+                            <h1 class="item-title text-center justify-content-center">HACCP y PPR</h1>
+                            <p class="item-description text-center m-0 justify-content-center">Inocuidad - Calidad Adulteración - Medio Ambiente Seguridad y Salud</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="item bg-orange p-4 text-uppercase text-white d-flex flex-column align-items-center">
+                            <img class="item-icon mb-3 justify-content-center" src="images/ifk_icon_riesgos.png" title="" alt="">
+                            <h1 class="item-title text-center justify-content-center">Evaluación de riesgos</h1>
+                            <p class="item-description text-center m-0 justify-content-center">Inocuidad - Calidad Adulteración - Medio Ambiente Seguridad y Salud</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="item bg-green-light p-4 text-uppercase text-white d-flex flex-column align-items-center">
+                            <img class="item-icon mb-3 justify-content-center" src="images/ifk_icon_fsma.png" title="" alt="">
+                            <h1 class="item-title text-center justify-content-center">FSMA</h1>
+                            <p class="item-description text-center m-0 justify-content-center">Controles Preventivos Produce Rule</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="item bg-green-dark p-4 text-uppercase text-white d-flex flex-column align-items-center">
+                            <img class="item-icon mb-3 justify-content-center" src="images/ifk_icon_legislacion.png" title="" alt="">
+                            <h1 class="item-title text-center justify-content-center">Gestión de la legislación </h1>
+                            <p class="item-description text-center m-0 justify-content-center">SMETA</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="item bg-purple p-4 text-uppercase text-white d-flex flex-column align-items-center">
+                            <img class="item-icon mb-3 justify-content-center" src="images/ifk_icon_cqi_irca.png" title="" alt="">
+                            <h1 class="item-title text-center justify-content-center">Formación CQI - IRCA</h1>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section> <!-- Categories -->
+
+        <section class="customers">
+            <div class=" container-fluid py-5 bg-primary-ifk text-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6 mb-4">
+                            <h1 class="title-customers">Nuestros Clientes</h1>
+                            <p class="description-customers m-0">Tenemos un fuerte compromiso educativo con cada uno de nuestros clientes que confian en nuestra plataforma.</p>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="h-100">
+                                <div class="d-flex flex-column justify-content-center align-items-md-end align-items-sm-center h-100">
+                                    <a href="#" class="text-uppercase btn-customers">Descargar Calendario</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-customers text-center">
+                <div class="container py-5">
+                    Slider Logos Clientes
+                </div>
+            </div>
+
+        </section>
+
+    </main> <!-- Main -->
+        
+    <footer class="footer text-center py-5">
+        Pie de página
     </footer>
     
     <!-- Optional JavaScript -->
@@ -91,6 +209,8 @@
     <script src="js/jquery.min.js"></script>
     <script src="assets/bootstrap4.1.3/js/popper.min.js"></script>
     <script src="assets/bootstrap4.1.3/js/bootstrap.min.js"></script>
+    <script src="assets/jquery-match-height/jquery.matchHeight-min.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 </html>

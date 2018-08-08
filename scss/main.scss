@@ -4,13 +4,35 @@
 
 //Colors
 $primary: #0099d8;
+$primary-dark: #017db3;
 $secondary: #404040;
 
-$primary-hover: #017db3;
-
 $gray-dark: #1F1F1F;
-$gray-ligth: #999999;
+$gray-light: #999999;
 
+.bg-primary-ifk{ background-color: $primary; }
+.bg-primary-dark-ifk{ background-color: $primary-dark; }
+.bg-secondary-ifk{ background-color: $secondary; }
+
+//Colors Categories
+$green: #54BE54;
+$green-light: #9db167;
+$green-dark: #227c55;
+$cian: #3498db;
+$brown: #72604b;
+$brown-light: #927f6d;
+$orange: #e4aa39;
+$purple: #6964a0;
+
+.bg-green{ background-color: $green; }
+.bg-green-light{ background-color: $green-light; }
+.bg-green-dark{ background-color: $green-dark; }
+.bg-cian{ background-color: $cian; }
+.bg-brown{ background-color: $brown; }
+.bg-brown-light {background-color: $brown-light; }
+.bg-orange{ background-color: $orange; }
+.bg-purple{ background-color: $purple; }
+  
 /*---------------------------------------------------------------------------------------------
         IMPORT FONTS: Open Sans
 ----------------------------------------------------------------------------------------------*/
@@ -155,30 +177,30 @@ $gray-ligth: #999999;
 
 @font-face {
     font-family: 'montserratregular';
-    src: url('../montserrat-regular-webfont.woff2') format('woff2'),
-         url('../montserrat-regular-webfont.woff') format('woff');
+    src: url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'montserratsemi_bold';
-    src: url('../montserrat-semibold-webfont.woff2') format('woff2'),
-         url('../montserrat-semibold-webfont.woff') format('woff');
+    src: url('../fonts/montserrat-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-semibold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'montserratultra_light';
-    src: url('../montserrat-ultralight-webfont.woff2') format('woff2'),
-         url('../montserrat-ultralight-webfont.woff') format('woff');
+    src: url('../fonts/montserrat-ultralight-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-ultralight-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 /*---------------------------------------------------------------------------------------------
-        MAIN MENU
+        INDEX: MAIN MENU
 ----------------------------------------------------------------------------------------------*/
 .header {
     background: white;
@@ -198,26 +220,93 @@ $gray-ligth: #999999;
 }
 
 /*---------------------------------------------------------------------------------------------
-        SLIDER
+        INDEX: SLIDER
 ----------------------------------------------------------------------------------------------*/ 
 .slider{
     .carousel-caption {
-             
+        bottom: 5rem;
         .title-slider{
-            font-size: 1.5625rem;
+            font-size: 1.875rem;
+            max-width: 25rem;
+            font-family: "montserratsemi_bold";
         }
         .btn-slider{
-            font-size: 1rem;
+            font-size: 0.875rem;
             background-color: $primary;
-            padding: .375rem 2rem;
+            padding: 0.625rem 2rem;
             border: 0;
             border-radius: 1.25rem;
+            font-family: "open_sansbold";
 
             &:hover{
-                background-color: $primary-hover;
-                border-color: $primary-hover;
+                background-color: $primary-dark;
+                border-color: $primary-dark;
             }
         }
     }
 }
-  
+
+/*---------------------------------------------------------------------------------------------
+        INDEX: CATEGORIES
+----------------------------------------------------------------------------------------------*/
+.categories{
+    padding: 5rem 0 5rem 0;
+    .title-section{
+        background: url("../images/ifk_line_separator.png") center bottom no-repeat;
+        font-family: "montserratregular";
+        font-size: 1.625rem;
+        color: $secondary;
+    }
+    .description-section{
+        font-family: "open_sansregular";
+        font-size: 0.875rem;
+        color: $secondary;
+    }
+
+    a{
+        text-decoration: none;
+    }
+    .item{
+        font-family: "montserratlight";
+        margin-bottom: 1.5rem;
+        .item-icon{
+            width: 6rem;
+        }
+        .item-title{
+            font-size: 1.25rem;
+        }
+        .item-description{
+            font-size: 0.625rem;
+        }
+
+        &:hover{
+           box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+        }
+    }
+}
+
+/*---------------------------------------------------------------------------------------------
+        INDEX: CUSTOMERS
+----------------------------------------------------------------------------------------------*/
+.customers{
+    .title-customers{
+        font-family: "montserratregular";
+    }
+    .description-customers{
+        font-family: "open_sansregular";
+    }
+    .btn-customers{
+        font-size: 0.875rem;
+        background-color: none;
+        padding: 0.625rem 2rem;
+        border: 1px solid #fff;
+        border-radius: 1.25rem;
+        font-family: "open_sansbold";
+        color: #fff;
+        text-decoration: none;
+        &:hover{
+            background-color: #fff;
+            color: $primary;
+        }
+    }
+}
