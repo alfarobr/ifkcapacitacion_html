@@ -10,6 +10,12 @@
 .bg-secondary-ifk {
   background-color: #404040; }
 
+.bg-gray-dark {
+  background-color: #1F1F1F; }
+
+.bg-gray-light {
+  background-color: #999999; }
+
 .bg-green {
   background-color: #54BE54; }
 
@@ -182,7 +188,7 @@
   .categories .title-section {
     background: url("../images/ifk_line_separator.png") center bottom no-repeat;
     font-family: "montserratregular";
-    font-size: 1.625rem;
+    font-size: 1.875rem;
     color: #404040; }
   .categories .description-section {
     font-family: "open_sansregular";
@@ -207,14 +213,16 @@
         INDEX: CUSTOMERS
 ----------------------------------------------------------------------------------------------*/
 .customers .title-customers {
-  font-family: "montserratregular"; }
+  font-family: "montserratregular";
+  font-size: 1.875rem; }
 .customers .description-customers {
-  font-family: "open_sansregular"; }
+  font-family: "open_sansregular";
+  font-size: 0.875rem; }
 .customers .btn-customers {
   font-size: 0.875rem;
   background-color: none;
   padding: 0.625rem 2rem;
-  border: 1px solid #fff;
+  border: 0.125rem solid #fff;
   border-radius: 1.25rem;
   font-family: "open_sansbold";
   color: #fff;
@@ -222,5 +230,27 @@
   .customers .btn-customers:hover {
     background-color: #fff;
     color: #0099d8; }
+
+/*---------------------------------------------------------------------------------------------
+        INDEX: FOOTER
+----------------------------------------------------------------------------------------------*/
+.footer {
+  color: #999999;
+  font-size: 0.7625rem; }
+  .footer .ifk-border-top {
+    border-top: 1px solid #999999; }
+  .footer ul {
+    margin: 0;
+    padding: 0; }
+    .footer ul li {
+      list-style: none; }
+  .footer a {
+    color: #999999; }
+  .footer .copyright hr {
+    background-color: #999999; }
+  .footer .copyright p {
+    font-family: "open_sansregular"; }
+  .footer .copyright a:hover {
+    text-decoration: underline; }
 
 /*# sourceMappingURL=main.css.map */

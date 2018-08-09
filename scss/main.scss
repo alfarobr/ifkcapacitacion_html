@@ -7,12 +7,15 @@ $primary: #0099d8;
 $primary-dark: #017db3;
 $secondary: #404040;
 
-$gray-dark: #1F1F1F;
-$gray-light: #999999;
-
 .bg-primary-ifk{ background-color: $primary; }
 .bg-primary-dark-ifk{ background-color: $primary-dark; }
 .bg-secondary-ifk{ background-color: $secondary; }
+
+$gray-dark: #1F1F1F;
+$gray-light: #999999;
+
+.bg-gray-dark{ background-color: $gray-dark; }
+.bg-gray-light{ background-color: $gray-light; }
 
 //Colors Categories
 $green: #54BE54;
@@ -254,7 +257,7 @@ $purple: #6964a0;
     .title-section{
         background: url("../images/ifk_line_separator.png") center bottom no-repeat;
         font-family: "montserratregular";
-        font-size: 1.625rem;
+        font-size: 1.875rem;
         color: $secondary;
     }
     .description-section{
@@ -291,15 +294,17 @@ $purple: #6964a0;
 .customers{
     .title-customers{
         font-family: "montserratregular";
+        font-size: 1.875rem;
     }
     .description-customers{
         font-family: "open_sansregular";
+        font-size: 0.875rem;
     }
     .btn-customers{
         font-size: 0.875rem;
         background-color: none;
         padding: 0.625rem 2rem;
-        border: 1px solid #fff;
+        border: 0.125rem solid #fff;
         border-radius: 1.25rem;
         font-family: "open_sansbold";
         color: #fff;
@@ -307,6 +312,39 @@ $purple: #6964a0;
         &:hover{
             background-color: #fff;
             color: $primary;
+        }
+    }
+}
+
+/*---------------------------------------------------------------------------------------------
+        INDEX: FOOTER
+----------------------------------------------------------------------------------------------*/
+.footer{
+    color: $gray-light;
+    font-size: 0.7625rem;
+    .ifk-border-top{ border-top: 1px solid $gray-light; }
+    ul{
+        margin: 0;
+        padding: 0;
+
+        li{
+            list-style: none;
+        }
+    }
+    a{
+        color: $gray-light;
+    }
+    .copyright{
+        hr{
+            background-color: $gray-light;
+        }
+        p{
+            font-family: "open_sansregular";
+        }
+        a{
+            &:hover{
+                text-decoration: underline;
+            }
         }
     }
 }
