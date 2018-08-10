@@ -8,10 +8,16 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/bootstrap4.1.3/css/bootstrap.min.css" >
-
     <!-- Light Slider-->
     <link rel="stylesheet" href="assets/lightslider/css/lightslider.min.css" >
-
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- Animate CSS -->
+    <link href="assets/animate/animate.min.css" rel="stylesheet">
+    <!-- Hover CSS -->
+    <link href="assets/hover/hover-min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="assets/aos/aos.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css">
 
@@ -23,7 +29,7 @@
     <header class="header pt-2 pb-2">
         <!-- Menu -->
         <div class="main-menu container">
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg animated fadeInUp">
                 <a class="navbar-brand" href="#">
                     <img src="images/ifk_logo_menu.png" height="70" alt="">
                 </a>
@@ -49,6 +55,26 @@
                             <a class="nav-link" href="#">CONTACTO</a>
                         </li>
                     </ul>
+                    <span class="navbar-text">
+                        <a class="social facebook facebook-hover" href="#">
+                            <span class="fa-stack hvr-grow">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a class="social youtube youtube-hover" href="#">
+                            <span class="fa-stack hvr-grow">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-youtube-play fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                        <a class="social twitter twitter-hover" href="#">
+                            <span class="fa-stack hvr-grow">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </span>
                 </div>
             </nav>
         </div> <!-- Menu -->
@@ -66,22 +92,22 @@
                 <div class="carousel-item active">
                     <div class="item" style="background: url('images/ifk_img_slider.jpg') center top no-repeat; height: 470px"></div>
                     <div class="carousel-caption text-uppercase text-left">
-                        <h2 class="title-slider mb-2">Somos el soporte estratégico para tu formación profesional</h2>
-                        <a src="#" class="btn btn-slider">Descargar calendario</a>
+                        <h2 class="title-slider mb-2 animated fadeInLeft">Somos el soporte estratégico para tu formación profesional</h2>
+                        <a src="#" class="btn btn-slider animated bounceIn delay-1s">Descargar calendario</a>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="item" style="background: url('images/ifk_img_slider.jpg') center top no-repeat; height: 470px;"></div>
                     <div class="carousel-caption text-uppercase text-left">
-                        <h2 class="title-slider mb-2">Somos el soporte estratégico para tu formación profesional</h2>
-                        <a src="#" class="btn btn-slider">Descargar calendario</a>
+                        <h2 class="title-slider mb-2 animated fadeInLeft">Somos el soporte estratégico para tu formación profesional</h2>
+                        <a src="#" class="btn btn-slider animated bounceIn delay-1s">Descargar calendario</a>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="item" style="background: url('images/ifk_img_slider.jpg') center top no-repeat; height: 470px;"></div>
                     <div class="carousel-caption text-uppercase text-left">
-                        <h2 class="title-slider mb-2">Somos el soporte estratégico para tu formación profesional</h2>
-                        <a src="#" class="btn btn-slider">Descargar calendario</a>
+                        <h2 class="title-slider mb-2 animated fadeInLeft">Somos el soporte estratégico para tu formación profesional</h2>
+                        <a src="#" class="btn btn-slider animated bounceIn delay-1s">Descargar calendario</a>
                     </div>
                 </div>
             </div>
@@ -109,7 +135,7 @@
                 <div class="row">
                     <div class="col-12 col-sm-6 col-md-4 col-lg-4">
                         <a href="#">
-                        <div class="item bg-green p-4 text-uppercase text-white d-flex flex-column align-items-center">
+                        <div class="item bg-green p-4 text-uppercase text-white d-flex flex-column align-items-center" data-aos="flip-left">
                             <img class="item-icon mb-3 justify-content-center" src="images/ifk_icon_onocuidad_alimentaria.png" title="" alt="">
                             <h1 class="item-title text-center justify-content-center">Inocuidad Alimentaria</h1>
                             <p class="item-description text-center m-0 justify-content-center">Normas BRC, IFS, FSSC</p>
@@ -118,7 +144,7 @@
                     </div>
 
                     <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                        <div class="item bg-cian p-4 text-uppercase text-white d-flex flex-column align-items-center">
+                        <div class="item bg-cian p-4 text-uppercase text-white d-flex flex-column align-items-center" data-aos="flip-left">
                             <img class="item-icon mb-3 justify-content-center" src="images/ifk_icon_onocuidad_emvases.png" title="" alt="">
                             <h1 class="item-title text-center justify-content-center">Inocuidad de envases y materiales de embalaje</h1>
                             <p class="item-description text-center m-0 justify-content-center">Normas BRC, IFS, FSSC</p>
@@ -126,14 +152,14 @@
                     </div>
 
                     <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                        <div class="item bg-brown p-4 text-uppercase text-white d-flex flex-column align-items-center">
+                        <div class="item bg-brown p-4 text-uppercase text-white d-flex flex-column align-items-center" data-aos="flip-left">
                             <img class="item-icon mb-3 justify-content-center" src="images/ifk_icon_haccp_ppr.png" title="" alt="">
                             <h1 class="item-title text-center justify-content-center">HACCP y PPR</h1>
                         </div>
                     </div>
 
                     <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                        <div class="item bg-brown-light p-4 text-uppercase text-white d-flex flex-column align-items-center">
+                        <div class="item bg-brown-light p-4 text-uppercase text-white d-flex flex-column align-items-center" data-aos="flip-left">
                             <img class="item-icon mb-3 justify-content-center" src="images/ifk_icon_haccp_ppr.png" title="" alt="">
                             <h1 class="item-title text-center justify-content-center">HACCP y PPR</h1>
                             <p class="item-description text-center m-0 justify-content-center">Inocuidad - Calidad Adulteración - Medio Ambiente Seguridad y Salud</p>
@@ -141,7 +167,7 @@
                     </div>
 
                     <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                        <div class="item bg-orange p-4 text-uppercase text-white d-flex flex-column align-items-center">
+                        <div class="item bg-orange p-4 text-uppercase text-white d-flex flex-column align-items-center" data-aos="flip-left">
                             <img class="item-icon mb-3 justify-content-center" src="images/ifk_icon_riesgos.png" title="" alt="">
                             <h1 class="item-title text-center justify-content-center">Evaluación de riesgos</h1>
                             <p class="item-description text-center m-0 justify-content-center">Inocuidad - Calidad Adulteración - Medio Ambiente Seguridad y Salud</p>
@@ -149,7 +175,7 @@
                     </div>
 
                     <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                        <div class="item bg-green-light p-4 text-uppercase text-white d-flex flex-column align-items-center">
+                        <div class="item bg-green-light p-4 text-uppercase text-white d-flex flex-column align-items-center" data-aos="flip-left">
                             <img class="item-icon mb-3 justify-content-center" src="images/ifk_icon_fsma.png" title="" alt="">
                             <h1 class="item-title text-center justify-content-center">FSMA</h1>
                             <p class="item-description text-center m-0 justify-content-center">Controles Preventivos Produce Rule</p>
@@ -157,7 +183,7 @@
                     </div>
 
                     <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                        <div class="item bg-green-dark p-4 text-uppercase text-white d-flex flex-column align-items-center">
+                        <div class="item bg-green-dark p-4 text-uppercase text-white d-flex flex-column align-items-center" data-aos="flip-left">
                             <img class="item-icon mb-3 justify-content-center" src="images/ifk_icon_legislacion.png" title="" alt="">
                             <h1 class="item-title text-center justify-content-center">Gestión de la legislación </h1>
                             <p class="item-description text-center m-0 justify-content-center">SMETA</p>
@@ -165,7 +191,7 @@
                     </div>
 
                     <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                        <div class="item bg-purple p-4 text-uppercase text-white d-flex flex-column align-items-center">
+                        <div class="item bg-purple p-4 text-uppercase text-white d-flex flex-column align-items-center" data-aos="flip-left">
                             <img class="item-icon mb-3 justify-content-center" src="images/ifk_icon_cqi_irca.png" title="" alt="">
                             <h1 class="item-title text-center justify-content-center">Formación CQI - IRCA</h1>
                         </div>
@@ -182,13 +208,13 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-6 mb-4">
-                            <h1 class="title-customers">Nuestros Clientes</h1>
-                            <p class="description-customers m-0">Tenemos un fuerte compromiso educativo con cada uno de nuestros clientes que confian en nuestra plataforma.</p>
+                            <h1 class="title-customers" data-aos="fade-right">Nuestros Clientes</h1>
+                            <p class="description-customers m-0" data-aos="fade-right">Tenemos un fuerte compromiso educativo con cada uno de nuestros clientes que confian en nuestra plataforma.</p>
                         </div>
                         <div class="col-12 col-md-6">
                             <div class="h-100">
                                 <div class="d-flex flex-column justify-content-center align-items-md-end align-items-sm-center h-100">
-                                    <a href="#" class="text-uppercase btn-customers">Descargar Calendario</a>
+                                    <a href="#" class="text-uppercase btn-customers" data-aos="fade-left">Descargar Calendario</a>
                                 </div>
                             </div>
                         </div>
@@ -197,7 +223,7 @@
             </div>
 
             <div class="slider-customers text-center">
-                <div class="container py-5">
+                <div class="container py-5" data-aos="zoom-in">
                     <div id="slider-customers" class="your-class">
                         <div><a href="#" target="_blank"><img src="images/ifk_customer_01.jpg" alt="" class="img-fluid"></a></div>
                         <div><a href="#" target="_blank"><img src="images/ifk_customer_02.jpg" alt="" class="img-fluid"></a></div>
@@ -220,8 +246,8 @@
         <div class="container py-5">
             <div class="mb-2">
                 <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <img src="images/ifk_logo_gray_light.png" width="130px">
+                    <div class="col-md-3 mb-4">
+                        <img src="images/ifk_logo_gray_light.png" width="150px">
                     </div>
                     <div class="col-md-2 mb-4">
                         <div class="ifk-border-top pt-3">
@@ -255,7 +281,29 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-2 mb-4">...</div>
+                    <div class="col-md-3 mb-4">
+                        <div class="row">
+                            <address class="col-6 col-md-12">
+                                <div class="float-left mr-3">
+                                    <i class="fa fa-phone fa-2x"></i>
+                                </div>
+                                <div class="float-left">
+                                    <strong class="phone">Atención a Clientes:</strong><br>
+                                    <span>(+56 2) 27329968</span><br>
+                                    <span>(+56 2) 94529406</span>
+                                </div>
+                            </address>
+                            <address class="col-6 col-md-12">
+                                <div class="float-left mr-3">
+                                    <i class="fa fa-envelope fa-2x"></i>
+                                </div>
+                                <div class="float-left">
+                                    <strong>Contacto:</strong><br>
+                                    <a href="mailto:dqsacademy@dqs-chile.com">dqsacademy@dqs-chile.com</a>
+                                </div>
+                            </address>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="copyright">
@@ -270,10 +318,12 @@
     <script src="js/jquery.min.js"></script>
     <script src="assets/bootstrap4.1.3/js/popper.min.js"></script>
     <script src="assets/bootstrap4.1.3/js/bootstrap.min.js"></script>
-    <!-- MatchHeight -->
+    <!-- MatchHeight JS -->
     <script src="assets/jquery-match-height/jquery.matchHeight-min.js"></script>
-    <!-- Light Slider-->
+    <!-- Light Slider JS-->
     <script src="assets/lightslider/js/lightslider.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Custom JS -->
     <script src="js/main.js"></script>
 
