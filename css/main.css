@@ -81,105 +81,95 @@
         IMPORT FONTS: Open Sans
 ----------------------------------------------------------------------------------------------*/
 @font-face {
-  font-family: 'open_sansbold';
+  font-family: 'open_sans_bold';
   src: url("../fonts/opensans-bold-webfont.woff2") format("woff2"), url("../fonts/opensans-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'open_sansbold_italic';
+  font-family: 'open_sans_bold_italic';
   src: url("../fonts/opensans-bolditalic-webfont.woff2") format("woff2"), url("../fonts/opensans-bolditalic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'open_sansextrabold';
+  font-family: 'open_sans_extrabold';
   src: url("../fonts/opensans-extrabold-webfont.woff2") format("woff2"), url("../fonts/opensans-extrabold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'open_sansextrabold_italic';
+  font-family: 'open_sans_extrabold_italic';
   src: url("../fonts/opensans-extrabolditalic-webfont.woff2") format("woff2"), url("../fonts/opensans-extrabolditalic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'open_sansitalic';
+  font-family: 'open_sans_italic';
   src: url("../fonts/opensans-italic-webfont.woff2") format("woff2"), url("../fonts/opensans-italic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'open_sanslight';
+  font-family: 'open_sans_light';
   src: url("../fonts/opensans-light-webfont.woff2") format("woff2"), url("../fonts/opensans-light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'open_sanslight_italic';
+  font-family: 'open_sans_light_italic';
   src: url("../fonts/opensans-lightitalic-webfont.woff2") format("woff2"), url("../fonts/opensans-lightitalic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'open_sansregular';
+  font-family: 'open_sans_regular';
   src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'open_sanssemibold';
+  font-family: 'open_sans_semibold';
   src: url("../fonts/opensans-semibold-webfont.woff2") format("woff2"), url("../fonts/opensans-semibold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'open_sanssemibold_italic';
+  font-family: 'open_sans_semibold_italic';
   src: url("../fonts/opensans-semibolditalic-webfont.woff2") format("woff2"), url("../fonts/opensans-semibolditalic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 /*---------------------------------------------------------------------------------------------
-        IMPORT FONTS: Monserrat
+        IMPORT FONTS: Montserrat
 ----------------------------------------------------------------------------------------------*/
 @font-face {
-  font-family: 'montserratblack';
+  font-family: 'montserrat_black';
   src: url("../fonts/montserrat-black-webfont.woff2") format("woff2"), url("../fonts/montserrat-black-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'montserratbold';
+  font-family: 'montserrat_bold';
   src: url("../fonts/montserrat-bold-webfont.woff2") format("woff2"), url("../fonts/montserrat-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'montserratbold';
-  src: url("../fonts/montserrat-bold-webfont.woff2") format("woff2"), url("../fonts/montserrat-bold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'montserratextra_bold';
+  font-family: 'montserrat_extrabold';
   src: url("../fonts/montserrat-extrabold-webfont.woff2") format("woff2"), url("../fonts/montserrat-extrabold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'montserrathairline';
+  font-family: 'montserrat_hairline';
   src: url("../fonts/montserrat-hairline-webfont.woff2") format("woff2"), url("../fonts/montserrat-hairline-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'montserratlight';
+  font-family: 'montserrat_light';
   src: url("../fonts/montserrat-light-webfont.woff2") format("woff2"), url("../fonts/montserrat-light-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'montserratregular';
+  font-family: 'montserrat_regular';
   src: url("../fonts/montserrat-regular-webfont.woff2") format("woff2"), url("../fonts/montserrat-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'montserratregular';
-  src: url("../fonts/montserrat-regular-webfont.woff2") format("woff2"), url("../fonts/montserrat-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: 'montserratsemi_bold';
+  font-family: 'montserrat_semibold';
   src: url("../fonts/montserrat-semibold-webfont.woff2") format("woff2"), url("../fonts/montserrat-semibold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'montserratultra_light';
+  font-family: 'montserrat_ultra_light';
   src: url("../fonts/montserrat-ultralight-webfont.woff2") format("woff2"), url("../fonts/montserrat-ultralight-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
@@ -188,7 +178,7 @@
 ----------------------------------------------------------------------------------------------*/
 .header {
   background: white;
-  font-family: 'open_sanssemibold'; }
+  font-family: 'open_sans_semibold', Arial, Helvetica, sans-serif; }
   .header .main-menu .nav-link {
     color: #0099d8;
     font-size: 0.875rem; }
@@ -211,14 +201,14 @@
   .slider .carousel-caption .title-slider {
     font-size: 1.875rem;
     max-width: 25rem;
-    font-family: "montserratsemi_bold"; }
+    font-family: "montserrat_semibold", Arial, Helvetica, sans-serif; }
   .slider .carousel-caption .btn-slider {
     font-size: 0.875rem;
     background-color: #0099d8;
     padding: 0.625rem 2rem;
     border: 0;
     border-radius: 1.25rem;
-    font-family: "open_sansbold"; }
+    font-family: "open_sans_bold", Arial, Helvetica, sans-serif; }
     .slider .carousel-caption .btn-slider:hover {
       background-color: #017db3;
       border-color: #017db3; }
@@ -226,21 +216,23 @@
 /*---------------------------------------------------------------------------------------------
         INDEX: CATEGORIES
 ----------------------------------------------------------------------------------------------*/
+.title-section {
+  background: url("../images/ifk_line_separator.png") center bottom no-repeat;
+  font-family: "montserrat_regular", Arial, Helvetica, sans-serif;
+  font-size: 1.875rem;
+  color: #404040; }
+
+.description-section {
+  font-family: "open_sans_regular", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
+  color: #404040; }
+
 .categories {
   padding: 5rem 0 5rem 0; }
-  .categories .title-section {
-    background: url("../images/ifk_line_separator.png") center bottom no-repeat;
-    font-family: "montserratregular";
-    font-size: 1.875rem;
-    color: #404040; }
-  .categories .description-section {
-    font-family: "open_sansregular";
-    font-size: 0.875rem;
-    color: #404040; }
   .categories a {
     text-decoration: none; }
   .categories .item {
-    font-family: "montserratlight";
+    font-family: "montserrat_light", Arial, Helvetica, sans-serif;
     margin-bottom: 1.5rem; }
     .categories .item .item-icon {
       width: 6rem; }
@@ -256,10 +248,10 @@
         INDEX: CUSTOMERS
 ----------------------------------------------------------------------------------------------*/
 .customers .title-customers {
-  font-family: "montserratregular";
+  font-family: "montserrat_regular", Arial, Helvetica, sans-serif;
   font-size: 1.875rem; }
 .customers .description-customers {
-  font-family: "open_sansregular";
+  font-family: "open_sans_regular", Arial, Helvetica, sans-serif;
   font-size: 0.875rem; }
 .customers .btn-customers {
   font-size: 0.875rem;
@@ -267,7 +259,7 @@
   padding: 0.625rem 2rem;
   border: 0.125rem solid #fff;
   border-radius: 1.25rem;
-  font-family: "open_sansbold";
+  font-family: "open_sans_bold", Arial, Helvetica, sans-serif;
   color: #fff;
   text-decoration: none; }
   .customers .btn-customers:hover {
@@ -279,7 +271,8 @@
 ----------------------------------------------------------------------------------------------*/
 .footer {
   color: #999999;
-  font-size: 0.8125rem; }
+  font-size: 0.8125rem;
+  font-family: "open_sans_regular", Arial, Helvetica, sans-serif; }
   .footer .ifk-border-top {
     border-top: 1px solid #999999; }
   .footer ul {
@@ -291,9 +284,26 @@
     color: #999999; }
   .footer .copyright hr {
     background-color: #999999; }
-  .footer .copyright p {
-    font-family: "open_sansregular"; }
   .footer .copyright a:hover {
     text-decoration: underline; }
+
+/*---------------------------------------------------------------------------------------------
+        HEADER-PAGES
+----------------------------------------------------------------------------------------------*/
+.content-header h1 {
+  max-width: 700px;
+  font-size: 1.625rem;
+  font-family: "montserrat_semibold", Arial, Helvetica, sans-serif; }
+
+/*---------------------------------------------------------------------------------------------
+        HEADER-PAGES
+----------------------------------------------------------------------------------------------*/
+.page-about {
+  font-family: "open_sans_regular", Arial, Helvetica, sans-serif; }
+  .page-about .description {
+    font-size: 0.875rem;
+    color: #404040; }
+  .page-about .map {
+    height: 270px; }
 
 /*# sourceMappingURL=main.css.map */
