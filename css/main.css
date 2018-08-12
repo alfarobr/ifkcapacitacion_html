@@ -232,17 +232,36 @@
   .categories a {
     text-decoration: none; }
   .categories .item {
-    font-family: "montserrat_light", Arial, Helvetica, sans-serif;
-    margin-bottom: 1.5rem; }
+    margin-bottom: 1.5rem;
+    -webkit-transition-property: color, background-color, border-color, -webkit-box-shadow;
+    transition-property: color, background-color, border-color, -webkit-box-shadow;
+    transition-property: color, background-color, border-color, box-shadow;
+    transition-property: color, background-color, border-color, box-shadow, -webkit-box-shadow;
+    -webkit-transition-duration: 0.15s, 0.15s, 0.15s, 0.15s;
+            transition-duration: 0.15s, 0.15s, 0.15s, 0.15s;
+    -webkit-transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+            transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+    -webkit-transition-delay: 0s, 0s, 0s, 0s;
+            transition-delay: 0s, 0s, 0s, 0s; }
     .categories .item .item-icon {
       width: 6rem; }
     .categories .item .item-title {
-      font-size: 1.25rem; }
+      font-size: 1.25rem;
+      font-family: "montserrat_light", Arial, Helvetica, sans-serif; }
     .categories .item .item-description {
       font-size: 0.625rem; }
     .categories .item:hover {
       -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-              box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
+              box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+      background-color: #F8F8F8;
+      border: 1px solid #DEE2E6; }
+      .categories .item:hover .item-title {
+        color: #21497A; }
+      .categories .item:hover .item-icon {
+        border: 1px solid #DEE2E6;
+        border-radius: 50%; }
+      .categories .item:hover .item-description {
+        color: #404040; }
 
 /*---------------------------------------------------------------------------------------------
         INDEX: CUSTOMERS
@@ -290,13 +309,48 @@
 /*---------------------------------------------------------------------------------------------
         HEADER-PAGES
 ----------------------------------------------------------------------------------------------*/
-.content-header h1 {
-  max-width: 700px;
+.content-header .title {
+  max-width: 43.75rem;
   font-size: 1.625rem;
   font-family: "montserrat_semibold", Arial, Helvetica, sans-serif; }
+.content-header .description p {
+  max-width: 43.75rem;
+  font-family: "open_sans_regular", Arial, Helvetica, sans-serif;
+  font-size: 0.875rem; }
+.content-header .button a {
+  font-size: 0.875rem;
+  background-color: #0099d8;
+  color: #ffffff;
+  padding: 0.625rem 2rem;
+  border: 0;
+  border-radius: 1.25rem;
+  font-family: "open_sans_bold", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out, border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out, border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out, border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out, border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  -webkit-transition-property: color, background-color, border-color, -webkit-box-shadow;
+  transition-property: color, background-color, border-color, -webkit-box-shadow;
+  transition-property: color, background-color, border-color, box-shadow;
+  transition-property: color, background-color, border-color, box-shadow, -webkit-box-shadow;
+  -webkit-transition-duration: 0.15s, 0.15s, 0.15s, 0.15s;
+          transition-duration: 0.15s, 0.15s, 0.15s, 0.15s;
+  -webkit-transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+          transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+  -webkit-transition-delay: 0s, 0s, 0s, 0s;
+          transition-delay: 0s, 0s, 0s, 0s; }
+  .content-header .button a:hover {
+    background-color: #017db3;
+    border-color: #017db3; }
+.content-header .city {
+  font-family: "montserrat_light", Arial, Helvetica, sans-serif; }
+.content-header .date {
+  font-family: "montserrat_semibold", Arial, Helvetica, sans-serif;
+  color: #0099d8; }
 
 /*---------------------------------------------------------------------------------------------
-        HEADER-PAGES
+        ABOUT PAGE
 ----------------------------------------------------------------------------------------------*/
 .page-about {
   font-family: "open_sans_regular", Arial, Helvetica, sans-serif; }
@@ -305,5 +359,87 @@
     color: #404040; }
   .page-about .map {
     height: 270px; }
+  .page-about .presence {
+    font-family: "montserrat_semibold", Arial, Helvetica, sans-serif;
+    color: #0099d8;
+    border-radius: 1rem;
+    border: 0.0625rem solid #0099d8; }
+  .page-about .data {
+    color: #0099d8;
+    font-size: 0.8125rem;
+    font-family: "open_sans_regulas", Arial, Helvetica, sans-serif; }
+  .page-about .business-related {
+    font-family: "open_sans_semibold", Arial, Helvetica, sans-serif; }
+    .page-about .business-related h1 {
+      font-size: 1.375rem; }
+      .page-about .business-related h1::before, .page-about .business-related h1::after {
+        content: " - "; }
+    .page-about .business-related a {
+      color: #d40000; }
+
+/*---------------------------------------------------------------------------------------------
+        CATEGORY PAGE
+----------------------------------------------------------------------------------------------*/
+.page-category .sub-title {
+  background-color: #0099d8;
+  text-align: center;
+  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out, border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out, border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out, border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out, border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  -webkit-transition-property: color, background-color, border-color, -webkit-box-shadow;
+  transition-property: color, background-color, border-color, -webkit-box-shadow;
+  transition-property: color, background-color, border-color, box-shadow;
+  transition-property: color, background-color, border-color, box-shadow, -webkit-box-shadow;
+  -webkit-transition-duration: 0.15s, 0.15s, 0.15s, 0.15s;
+          transition-duration: 0.15s, 0.15s, 0.15s, 0.15s;
+  -webkit-transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+          transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+  -webkit-transition-delay: 0s, 0s, 0s, 0s;
+          transition-delay: 0s, 0s, 0s, 0s; }
+  .page-category .sub-title a {
+    font-family: "montserrat_semibold";
+    color: #ffffff;
+    padding: 0.9375rem;
+    text-decoration: none; }
+  .page-category .sub-title:hover {
+    background-color: #017db3; }
+.page-category a {
+  text-decoration: none; }
+.page-category .item {
+  background-color: #21497A;
+  margin-bottom: 1.5rem;
+  -webkit-transition-property: color, background-color, border-color, -webkit-box-shadow;
+  transition-property: color, background-color, border-color, -webkit-box-shadow;
+  transition-property: color, background-color, border-color, box-shadow;
+  transition-property: color, background-color, border-color, box-shadow, -webkit-box-shadow;
+  -webkit-transition-duration: 0.15s, 0.15s, 0.15s, 0.15s;
+          transition-duration: 0.15s, 0.15s, 0.15s, 0.15s;
+  -webkit-transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+          transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+  -webkit-transition-delay: 0s, 0s, 0s, 0s;
+          transition-delay: 0s, 0s, 0s, 0s; }
+  .page-category .item .icon {
+    color: #6FD8FF; }
+  .page-category .item .title {
+    font-family: "montserrat_regular", Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    color: #6FD8FF; }
+  .page-category .item .description {
+    color: #ffffff;
+    font-size: 0.875rem; }
+  .page-category .item:hover {
+    background-color: #F8F8F8;
+    border: 1px solid #DEE2E6;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); }
+    .page-category .item:hover .icon, .page-category .item:hover .title {
+      color: #21497A; }
+    .page-category .item:hover .description {
+      color: #404040; }
+
+/*---------------------------------------------------------------------------------------------
+        LANDING COURSE PAGE
+----------------------------------------------------------------------------------------------*/
 
 /*# sourceMappingURL=main.css.map */

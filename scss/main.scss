@@ -6,6 +6,7 @@
 $primary: #0099d8;
 $primary-dark: #017db3;
 $secondary: #404040;
+$red: #d40000;
 
 .bg-primary-ifk{ background-color: $primary; }
 .bg-primary-dark-ifk{ background-color: $primary-dark; }
@@ -18,6 +19,7 @@ $gray-light: #999999;
 .bg-gray-light{ background-color: $gray-light; }
 
 //Colors Categories
+$white: #ffffff;
 $green: #54BE54;
 $green-light: #9db167;
 $green-dark: #227c55;
@@ -26,6 +28,15 @@ $brown: #72604b;
 $brown-light: #927f6d;
 $orange: #e4aa39;
 $purple: #6964a0;
+
+//Colors Subcategories
+$blue-dark: #21497A;
+$blue-light: #6FD8FF;
+$gray-extra-light: #F8F8F8;
+$gray-extra-ligh-dark: #DEE2E6;
+  
+  
+  
 
 .bg-green{ background-color: $green; }
 .bg-green-light{ background-color: $green-light; }
@@ -284,20 +295,36 @@ $purple: #6964a0;
         text-decoration: none;
     }
     .item{
-        font-family: "montserrat_light", Arial, Helvetica, sans-serif;
         margin-bottom: 1.5rem;
+        transition-property: color, background-color, border-color, box-shadow;
+        transition-duration: 0.15s, 0.15s, 0.15s, 0.15s;
+        transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+        transition-delay: 0s, 0s, 0s, 0s;
         .item-icon{
             width: 6rem;
         }
         .item-title{
             font-size: 1.25rem;
+            font-family: "montserrat_light", Arial, Helvetica, sans-serif;
         }
         .item-description{
             font-size: 0.625rem;
         }
 
         &:hover{
-           box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+            box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+            background-color: $gray-extra-light;
+            border: 1px solid $gray-extra-ligh-dark;
+            .item-title{
+                color: $blue-dark;
+            }
+            .item-icon{
+                border: 1px solid $gray-extra-ligh-dark;
+                border-radius: 50%;
+            }
+            .item-description{
+                color: $secondary;
+            }
         }
     }
 }
@@ -365,14 +392,50 @@ $purple: #6964a0;
 /*---------------------------------------------------------------------------------------------
         HEADER-PAGES
 ----------------------------------------------------------------------------------------------*/
-.content-header h1{
-    max-width: 700px;
-    font-size: 1.625rem;
-    font-family: "montserrat_semibold", Arial, Helvetica, sans-serif;
+.content-header{
+    .title{
+        max-width: 43.75rem;
+        font-size: 1.625rem;
+        font-family: "montserrat_semibold", Arial, Helvetica, sans-serif;
+    }
+    .description{
+        p{
+            max-width: 43.75rem;
+            font-family: "open_sans_regular", Arial, Helvetica, sans-serif;
+            font-size: 0.875rem; 
+        }
+    }
+    .button a{
+        font-size: 0.875rem;
+        background-color: #0099d8;
+        color: $white;
+        padding: 0.625rem 2rem;
+        border: 0;
+        border-radius: 1.25rem;
+        font-family: "open_sans_bold", Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out, border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        transition-property: color, background-color, border-color, box-shadow;
+        transition-duration: 0.15s, 0.15s, 0.15s, 0.15s;
+        transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+        transition-delay: 0s, 0s, 0s, 0s;
+
+        &:hover{
+            background-color: $primary-dark;
+            border-color: $primary-dark;
+        }
+    }
+    .city{
+        font-family: "montserrat_light", Arial, Helvetica, sans-serif;
+    }
+    .date{
+        font-family: "montserrat_semibold", Arial, Helvetica, sans-serif;
+        color: $primary;
+    }
 }
 
 /*---------------------------------------------------------------------------------------------
-        HEADER-PAGES
+        ABOUT PAGE
 ----------------------------------------------------------------------------------------------*/
 .page-about{
     font-family: "open_sans_regular", Arial, Helvetica, sans-serif;
@@ -384,4 +447,93 @@ $purple: #6964a0;
     .map{
         height: 270px;
     }
+    .presence{
+        font-family: "montserrat_semibold", Arial, Helvetica, sans-serif;
+        color: $primary;
+        border-radius: 1rem;
+        border: 0.0625rem solid $primary;
+    }
+    .data{
+        color: $primary;
+        font-size: 0.8125rem;
+        font-family: "open_sans_regulas", Arial, Helvetica, sans-serif;
+    }
+    .business-related{
+        font-family: "open_sans_semibold", Arial, Helvetica, sans-serif;
+        h1{
+            font-size: 1.375rem;
+            &::before, &::after{
+                content: " - ";
+            }
+        }
+        
+        a{
+            color: $red;
+        }
+        
+    }
 }
+
+/*---------------------------------------------------------------------------------------------
+        CATEGORY PAGE
+----------------------------------------------------------------------------------------------*/
+.page-category{
+    .sub-title{
+        background-color: $primary;
+        text-align: center;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out, border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        transition-property: color, background-color, border-color, box-shadow;
+        transition-duration: 0.15s, 0.15s, 0.15s, 0.15s;
+        transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+        transition-delay: 0s, 0s, 0s, 0s;
+        a{
+            font-family: "montserrat_semibold";
+            color: $white;
+            padding: 0.9375rem;
+            text-decoration: none;
+        }
+
+        &:hover {
+            background-color: $primary-dark;
+        }
+    }
+
+    a{
+        text-decoration: none;
+    }
+    .item{
+        background-color: $blue-dark;
+        margin-bottom: 1.5rem;
+        transition-property: color, background-color, border-color, box-shadow;
+        transition-duration: 0.15s, 0.15s, 0.15s, 0.15s;
+        transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+        transition-delay: 0s, 0s, 0s, 0s;
+        .icon{
+            color: $blue-light;
+        }
+        .title{
+            font-family: "montserrat_regular", Arial, Helvetica, sans-serif;
+            font-size: 1.25rem;
+            color: $blue-light;
+        }
+        .description{
+            color: $white;
+            font-size: 0.875rem;
+        }
+        &:hover{
+            background-color: $gray-extra-light;
+            border: 1px solid $gray-extra-ligh-dark;
+            box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+            .icon, .title{
+                color: $blue-dark;
+            }
+            .description{
+                color: $secondary;
+            }
+        }
+    }
+}
+
+/*---------------------------------------------------------------------------------------------
+        LANDING COURSE PAGE
+----------------------------------------------------------------------------------------------*/
