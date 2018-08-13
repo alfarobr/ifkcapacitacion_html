@@ -16,6 +16,12 @@
 .bg-gray-light {
   background-color: #999999; }
 
+.bg-extra-light {
+  background-color: #F8F8F8; }
+
+.bg-extra-light-dark {
+  background-color: #DEE2E6; }
+
 .bg-green {
   background-color: #54BE54; }
 
@@ -77,6 +83,9 @@
 .linkedin-hover:hover {
   color: #0177B5; }
 
+/*---------------------------------------------------------------------------------------------
+        CSS GENERAL
+----------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------------
         IMPORT FONTS: Open Sans
 ----------------------------------------------------------------------------------------------*/
@@ -326,6 +335,8 @@
   border-radius: 1.25rem;
   font-family: "open_sans_bold", Arial, Helvetica, sans-serif;
   text-decoration: none;
+  display: inline-block;
+  margin-bottom: 0.625rem;
   -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out, border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
   transition: color .15s ease-in-out,background-color .15s ease-in-out, border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
   transition: color .15s ease-in-out,background-color .15s ease-in-out, border-color .15s ease-in-out,box-shadow .15s ease-in-out;
@@ -439,7 +450,85 @@
       color: #404040; }
 
 /*---------------------------------------------------------------------------------------------
-        LANDING COURSE PAGE
+        LANDING PAGE COURSE
 ----------------------------------------------------------------------------------------------*/
+.page-course .summary {
+  font-family: "open_sans_regular", Arial, Helvetica, sans-serif;
+  color: #404040;
+  font-size: 0.875rem; }
+.page-course .city {
+  font-family: "montserrat_semibold", Arial, Helvetica, sans-serif;
+  font-size: 1.125rem;
+  margin: 0; }
+.page-course .info-tab .nav-tabs {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #0099d8; }
+  .page-course .info-tab .nav-tabs .nav-link {
+    font-family: "open_sans_regular", Arial, Helvetica, sans-serif;
+    color: #0099d8;
+    border-radius: 0; }
+    .page-course .info-tab .nav-tabs .nav-link.active, .page-course .info-tab .nav-tabs .nav-link:hover {
+      border-color: #0099d8 #0099d8 #ffffff;
+      font-family: "open_sans_semibold", Arial, Helvetica, sans-serif;
+      color: #0099d8; }
+.page-course .info-tab .tab-content {
+  font-size: 0.875rem;
+  font-family: "open_sans_regular";
+  color: #404040; }
+  .page-course .info-tab .tab-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .page-course .info-tab .tab-content ul li {
+      padding-left: 1.25rem;
+      text-indent: -1.2rem; }
+      .page-course .info-tab .tab-content ul li:before {
+        content: "\f111";
+        font-family: FontAwesome;
+        color: #0099d8;
+        margin-right: 0.625rem;
+        font-size: 0.5rem; }
+.page-course .diary .content {
+  border: 1px solid #ffffff; }
+  .page-course .diary .content .title,
+  .page-course .diary .content .description {
+    font-family: "montserrat_regular", Arial, Helvetica, sans-serif;
+    font-size: 1.125rem; }
+.page-course .diary .nav-tabs {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #999999; }
+  .page-course .diary .nav-tabs .nav-link {
+    font-family: "open_sans_regular", Arial, Helvetica, sans-serif;
+    color: #0099d8;
+    border-radius: 0;
+    border-color: transparent #999999 #999999; }
+    .page-course .diary .nav-tabs .nav-link.active, .page-course .diary .nav-tabs .nav-link:hover {
+      border-color: transparent #999999 #999999;
+      font-family: "open_sans_semibold", Arial, Helvetica, sans-serif;
+      color: #ffffff;
+      background-color: #0099d8; }
+.page-course .trainers .head {
+  color: #0099d8; }
+  .page-course .trainers .head .title {
+    font-family: "montserrat_semibold";
+    font-size: 1.625rem; }
+  .page-course .trainers .head .description {
+    font-family: "montserrat_regular";
+    font-size: 1.375rem; }
+.page-course .trainers .item .info .name {
+  font-family: "montserrat_regular", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #0099d8; }
+.page-course .trainers .item .info p {
+  font-size: 12px;
+  font-family: "open_sans_regular", Arial, Helvetica, sans-serif;
+  margin-bottom: 6px;
+  color: #1F1F1F; }
+.page-course .trainers .item .info hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-color: #404040; }
+.page-course .trainers .item .info .bio p {
+  color: #404040; }
 
 /*# sourceMappingURL=main.css.map */

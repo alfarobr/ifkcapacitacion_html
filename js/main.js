@@ -82,4 +82,14 @@ $(document).ready(function(){
 		pager: true,
 	});
 
+	$("#slider-trainers").lightSlider({
+		item: 1,
+		speed: 800,
+		auto: false,
+		//loop: true,
+		dots: true,
+		pauseOnHover: true,
+		pager: true,
+	});
+
 });

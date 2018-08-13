@@ -34,8 +34,9 @@ $blue-dark: #21497A;
 $blue-light: #6FD8FF;
 $gray-extra-light: #F8F8F8;
 $gray-extra-ligh-dark: #DEE2E6;
-  
-  
+
+.bg-extra-light{background-color: $gray-extra-light; }
+.bg-extra-light-dark{ background-color: $gray-extra-ligh-dark; }  
   
 
 .bg-green{ background-color: $green; }
@@ -62,6 +63,11 @@ $gray-extra-ligh-dark: #DEE2E6;
 .youtube-hover:hover{color: #BB0000;}
 .instagram-hover:hover{color: #125688;}
 .linkedin-hover:hover{color: #0177B5;}
+
+/*---------------------------------------------------------------------------------------------
+        CSS GENERAL
+----------------------------------------------------------------------------------------------*/
+
   
 /*---------------------------------------------------------------------------------------------
         IMPORT FONTS: Open Sans
@@ -407,13 +413,16 @@ $gray-extra-ligh-dark: #DEE2E6;
     }
     .button a{
         font-size: 0.875rem;
-        background-color: #0099d8;
+        background-color: $primary;
         color: $white;
         padding: 0.625rem 2rem;
         border: 0;
         border-radius: 1.25rem;
         font-family: "open_sans_bold", Arial, Helvetica, sans-serif;
         text-decoration: none;
+        display: inline-block;
+        margin-bottom: 0.625rem;
+
         transition: color .15s ease-in-out,background-color .15s ease-in-out, border-color .15s ease-in-out,box-shadow .15s ease-in-out;
         transition-property: color, background-color, border-color, box-shadow;
         transition-duration: 0.15s, 0.15s, 0.15s, 0.15s;
@@ -535,5 +544,129 @@ $gray-extra-ligh-dark: #DEE2E6;
 }
 
 /*---------------------------------------------------------------------------------------------
-        LANDING COURSE PAGE
+        LANDING PAGE COURSE
 ----------------------------------------------------------------------------------------------*/
+
+.page-course{
+    .summary{
+        font-family: "open_sans_regular", Arial, Helvetica, sans-serif;
+        color: $secondary;
+        font-size: 0.875rem;
+    }
+
+    .city{
+        font-family: "montserrat_semibold", Arial, Helvetica, sans-serif;
+        font-size: 1.125rem;
+        margin: 0;
+    }
+
+    .info-tab{
+        .nav-tabs{
+            margin-bottom: 1rem;
+            border-bottom: 1px solid $primary;
+            .nav-link{
+                font-family: "open_sans_regular", Arial, Helvetica, sans-serif;
+                color: $primary;
+                border-radius: 0;
+                &.active, &:hover{
+                    border-color: $primary $primary $white;
+                    font-family: "open_sans_semibold", Arial, Helvetica, sans-serif;
+                    color: $primary;
+                }
+            }
+        }
+        .tab-content{
+            font-size: 0.875rem;
+            font-family: "open_sans_regular";
+            color: $secondary;
+            ul{
+                list-style: none;
+                padding:0;
+                margin:0;
+                li{
+                    padding-left: 1.25rem;
+                    text-indent: -1.2rem;
+                    &:before{
+                        content: "\f111";
+                        font-family: FontAwesome;
+                        color: $primary;
+                        margin-right: 0.625rem;
+                        font-size: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .diary{
+        .content{
+            border: 1px solid $white;
+            .title,
+            .description{
+                font-family: "montserrat_regular", Arial, Helvetica, sans-serif;
+                font-size: 1.125rem;
+            }
+        }
+
+        .nav-tabs{
+            margin-bottom: 1rem;
+            border-bottom: 1px solid $gray-light;
+            .nav-link{
+                font-family: "open_sans_regular", Arial, Helvetica, sans-serif;
+                color: $primary;
+                border-radius: 0;
+                border-color: transparent $gray-light $gray-light;
+                &.active, &:hover{
+                    border-color: transparent $gray-light $gray-light;
+                    font-family: "open_sans_semibold", Arial, Helvetica, sans-serif;
+                    color: $white;
+                    background-color: $primary;
+                }
+            }
+        }
+    }
+
+    .trainers{
+        .head{
+            color: $primary;
+            .title{
+                font-family: "montserrat_semibold";
+                font-size: 1.625rem;
+            }
+            .description{
+                font-family: "montserrat_regular";
+                font-size: 1.375rem;
+            }
+        }
+
+        .item{
+            .photo{
+
+            }
+            .info{
+                .name{
+                    font-family: "montserrat_regular", Arial, Helvetica, sans-serif;
+                    font-size: 20px;
+                    color: $primary;
+                }
+                p{
+                    font-size: 12px;
+                    font-family: "open_sans_regular", Arial, Helvetica, sans-serif;
+                    margin-bottom: 6px;
+                    color: $gray-dark;
+                }
+                hr{
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    border-color: $secondary;
+                }
+                .bio {
+                    p{
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+    }
+}
+  
