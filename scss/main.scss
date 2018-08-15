@@ -668,5 +668,71 @@ $gray-extra-ligh-dark: #DEE2E6;
             }
         }
     }
+
+    .paymemt{
+        .item{
+            .icon{
+                max-width: 4.0625rem;
+                margin-bottom: 0.625rem;
+            }
+            .title{
+                font-family: "open_sans_bold", Arial, Helvetica, sans-serif;
+                font-size: 0.9375rem;
+                color: $primary;
+                margin-bottom: 0.5rem;
+            }
+            .description{
+                font-family: "open_sans_regular", Arial, Helvetica, sans-serif;
+                font-size: 0.8438rem;
+                color: $secondary;
+            }
+        }
+    }
+
+    .paymet-step{
+        .title{
+            font-family: "open_sans_bold", Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+        .description{
+            font-family: "open_sans_regular", Arial, Helvetica, sans-serif;
+            font-size: 0.8438rem;
+            a{
+                color: white;
+                font-family: "open_sans_bold", Arial, Helvetica, sans-serif;
+            }
+        }
+        .close-inscription{
+            font-family: "open_sans_bold", Arial, Helvetica, sans-serif;
+            padding: 10px;
+            border: 1px solid #fff;
+            display: inline-block;
+        }
+    }
 }
+
+/*---------------------------------------------------------------------------------------------
+        PAGE: CONTACT
+----------------------------------------------------------------------------------------------*/
+.page-contact{
+    .item{
+        background-color: #f8f8f8;
+        .icon{
+            max-height: 28px;
+            margin-bottom: 0.9375rem;
+        }
+        .title{
+            font-family: "open_sans_bold", Arial, Helvetica, sans-serif;
+            font-size: 0.875rem;
+            color: $primary;
+        }
+        .description{
+            font-family: "open_sans_regular", Arial, Helvetica, sans-serif;
+            font-size: 0.875rem;
+            color: $secondary;
+            margin: 0;
+        }
+    }
+}
+
   
