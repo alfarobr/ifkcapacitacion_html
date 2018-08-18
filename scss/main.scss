@@ -680,6 +680,7 @@ $gray-extra-ligh-dark: #DEE2E6;
                 font-size: 0.9375rem;
                 color: $primary;
                 margin-bottom: 0.5rem;
+                line-height: 1rem;
             }
             .description{
                 font-family: "open_sans_regular", Arial, Helvetica, sans-serif;
@@ -735,4 +736,58 @@ $gray-extra-ligh-dark: #DEE2E6;
     }
 }
 
+/*---------------------------------------------------------------------------------------------
+        PAGE: NEWS
+----------------------------------------------------------------------------------------------*/
+.page-news{
+    .title-page{
+        background-color: $gray-extra-light;
+        h1{
+            background: $primary;
+            font-family: "open_sans_regular", Arial, Helvetica, sans-serif;
+            color: $white;
+            font-size: 1rem;
+            padding: 0.625rem 1.875rem;
+            display: inline-block;
+            margin: 0;
+        }
+    }
+    .item-news{
+        margin-bottom: 15px;
+        .title-news{
+            background-color: $gray-extra-light;
+            padding: 0.9375rem;
+            h1{
+                font-family: "montserrat_bold", Arial, Helvetica, sans-serif;
+                font-size: 1rem;
+                padding-bottom: 0.1875rem;
+                margin: 0;
+            }
+            .separator-title{
+                background-color: $gray-extra-ligh-dark;
+                height: 2px;
+                margin-bottom: 0.25rem;
+                .item{
+                    background: $primary;
+                    max-width: 30px;
+                    height: 2px;
+                }
+            }
+            p{
+                font-family: "opensans_regular", Arial, Helvetica, sans-serif;
+                font-size: 0.875rem;
+                padding-bottom: 3px;
+                border-bottom: 1px solid $gray-extra-light;
+                margin: 0;
+            }
+        }
+    }
+    
+    .content-sidebar{
+        .item-ads{
+            margin-bottom: 15px;
+        }
+    }
+}
+  
   

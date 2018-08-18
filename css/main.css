@@ -537,7 +537,8 @@
   font-family: "open_sans_bold", Arial, Helvetica, sans-serif;
   font-size: 0.9375rem;
   color: #0099d8;
-  margin-bottom: 0.5rem; }
+  margin-bottom: 0.5rem;
+  line-height: 1rem; }
 .page-course .paymemt .item .description {
   font-family: "open_sans_regular", Arial, Helvetica, sans-serif;
   font-size: 0.8438rem;
@@ -574,5 +575,45 @@
     font-size: 0.875rem;
     color: #404040;
     margin: 0; }
+
+/*---------------------------------------------------------------------------------------------
+        PAGE: NEWS
+----------------------------------------------------------------------------------------------*/
+.page-news .title-page {
+  background-color: #F8F8F8; }
+  .page-news .title-page h1 {
+    background: #0099d8;
+    font-family: "open_sans_regular", Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 0.625rem 1.875rem;
+    display: inline-block;
+    margin: 0; }
+.page-news .item-news {
+  margin-bottom: 15px; }
+  .page-news .item-news .title-news {
+    background-color: #F8F8F8;
+    padding: 0.9375rem; }
+    .page-news .item-news .title-news h1 {
+      font-family: "montserrat_bold", Arial, Helvetica, sans-serif;
+      font-size: 1rem;
+      padding-bottom: 0.1875rem;
+      margin: 0; }
+    .page-news .item-news .title-news .separator-title {
+      background-color: #DEE2E6;
+      height: 2px;
+      margin-bottom: 0.25rem; }
+      .page-news .item-news .title-news .separator-title .item {
+        background: #0099d8;
+        max-width: 30px;
+        height: 2px; }
+    .page-news .item-news .title-news p {
+      font-family: "opensans_regular", Arial, Helvetica, sans-serif;
+      font-size: 0.875rem;
+      padding-bottom: 3px;
+      border-bottom: 1px solid #F8F8F8;
+      margin: 0; }
+.page-news .content-sidebar .item-ads {
+  margin-bottom: 15px; }
 
 /*# sourceMappingURL=main.css.map */
